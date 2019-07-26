@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SimpleEcommerce</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_news_text">This is News Page</string>
+    <string name="nama_placeholde_text">nama</string>
+    <string name="cd_image_category">image category</string>
+    <string name="txt_price_dolar">$340</string>
+
+    <string name="client_id">796490683860-01gkl40rqnmkkd7msd6cgli6l3bgksh7.apps.googleusercontent.com</string>
+    <string name="client_secret">t7y2i-LmU7j6SjTZmSRKq_bo</string>
+
+    <string name="facebook_app_id">338277667113570</string>
+    <string name="fb_login_protocol_scheme">fb338277667113570</string>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.HomeStuffFragment"
+        android:id="@+id/frameLayout">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_home_stuff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/tool_home_stuff"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/ecommerce_white"
+                android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+
+                        android:src="@drawable/ic_favorite_black"
+                        android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/bg_rounded_black">
+
+                    <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_search_black"
+                            android:layout_margin="5dp"/>
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp" android:id="@+id/edt_search_home_stuff"/>
+
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_notifications_active_black"
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_category_stuff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/rv_product_promo"
+            app:layout_constraintTop_toBottomOf="@id/appbar_home_stuff"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/rv_product_promo"
+            app:layout_constraintTop_toBottomOf="@id/rv_category_stuff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
