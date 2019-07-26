@@ -8,7 +8,7 @@ import io.reactivex.Single
 
 class RemoteApiStuff {
 
-    fun getAllListStuffs(): Single<ListStuffResult> {
+    fun getAllListStuffs(): Single<String> {
         return RetrofitLib.instance.getListStuff()
     }
 

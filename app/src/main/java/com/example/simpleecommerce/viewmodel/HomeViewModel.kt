@@ -12,18 +12,14 @@ import com.example.simpleecommerce.model.database.PurchaseHistory
 import com.example.simpleecommerce.model.network.Category
 import com.example.simpleecommerce.model.network.ProductPromo
 import com.example.simpleecommerce.network.ConstantEndPoint
-import com.example.simpleecommerce.network.RetrofitLib
 import com.example.simpleecommerce.repository.LocalDbStuff
 import com.example.simpleecommerce.repository.RemoteApiStuff
 import com.google.gson.Gson
-import com.google.gson.JsonObject
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import org.json.JSONArray
-import org.json.JSONObject
 import java.lang.Exception
-import kotlin.math.log
 
 class HomeViewModel : ViewModel() {
 
