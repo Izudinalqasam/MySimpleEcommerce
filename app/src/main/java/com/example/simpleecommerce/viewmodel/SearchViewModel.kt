@@ -74,7 +74,7 @@ class SearchViewModel : ViewModel() {
 
         try {
             for (i in items.indices) {
-                if (items[i].title.contains(keyword)){
+                if (items[i].title.toLowerCase().contains(keyword.toLowerCase())){
                     listItemProduct.add(items[i])
                 }
             }
